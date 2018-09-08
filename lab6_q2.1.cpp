@@ -10,6 +10,8 @@ return a+b;
 int main() {
 //declare three variables
 int n1, n2, sum;
+cout << "Enter two numbers";
+cin >> n1 >> n2;
 //call the function to sum the numbers
 sum= sumNum(n1, n2);
 cout << "Sum=" << sum << endl;
