@@ -2,6 +2,7 @@
 //First include library
 #include<iostream>
 using namespace std;
+//function to merge both the arrays
 int mergeArray(int ar[], int arr[],int n1, int n2) {
   int merge[n1+n2];
   for(int i=0; i<n1; i++) {
@@ -71,6 +72,7 @@ int main() {
     //assign the values as elements in array
     arry[i]= k;
    }
+  //calling the functions
   mergeArray(ary, arry, no1, no2);
   cout << "Maximum element of two arrays=" << maximum(ary, arry, no1, no2)<< endl;;
   cout << "Minimum element of two arrays=" << minimum(ary, arry, no1, no2)<< endl;
