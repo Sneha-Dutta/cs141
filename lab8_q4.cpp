@@ -16,24 +16,30 @@ int mergeArray(int ar[], int arr[],int n1, int n2) {
   }
   return 0;
 }
+//find maximum of all elements
 int maximum(int ar[], int arr[], int n1, int n2) {
   int max=ar[0];
   for(int i=0; i<n1; i++) {
+   //finding max in first array
    if(ar[i]> max)
    max= ar[i];
   }
+  //then finding max in second array
   for(int i=0; i<n2; i++) {
    if (arr[i]>max)
    max=arr[i];
   }
   return max;
 }
+//find minimum of all elements
 int minimum(int ar[], int arr[], int n1, int n2) {
   int min= ar[0];
+  //finding minimum in 1st array
   for(int i=0; i<n1; i++) {
    if(ar[i]< min)
    min= ar[i];
   }
+  //finding minimum in 2nd array
   for(int i=0; i<n2; i++) {
    if (arr[i]< min)
    min=arr[i];
